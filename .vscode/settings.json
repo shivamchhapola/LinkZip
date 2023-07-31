@@ -11,5 +11,8 @@
     "**/.project": true,
     "**/.settings": true,
     "**/node_modules": false
-  }
+  },
+  "typescript.suggest.autoImports": true,
+  "javascript.suggest.autoImports": true,
+  "javascript.preferences.importModuleSpecifier": "non-relative",
 }
