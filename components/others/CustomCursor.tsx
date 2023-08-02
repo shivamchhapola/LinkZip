@@ -40,10 +40,10 @@ export default function CustomCursor({
     );
 
     //mouse enter/leave big element event
-    bigElements.forEach((e: HTMLElement) => {
+    bigElements.forEach((e) => {
       e.addEventListener('mouseenter', mouseEnterHandler);
       e.addEventListener('mouseleave', mouseLeaveHandler);
-      e.style.cursor = "none";
+      e.hasAttribute("style") ?? e.setAttribute("style", (e.getAttribute("style") + "cursor: none"));
     });
 
     //mouse enter/leave window event
