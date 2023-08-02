@@ -43,6 +43,7 @@ export default function CustomCursor({
     bigElements.forEach((e) => {
       e.addEventListener('mouseenter', mouseEnterHandler);
       e.addEventListener('mouseleave', mouseLeaveHandler);
+      e.style.cursor = "none";
     });
 
     //mouse enter/leave window event
@@ -80,7 +81,7 @@ export default function CustomCursor({
         backgroundColor: color,
         visibility: visible ? 'visible' : 'hidden',
       }}
-      className={`pointer-events-none fixed rounded-full z-[99] mix-blend-difference transition-transform`}
+      className={`hidden sm:block pointer-events-none fixed rounded-full z-[99] mix-blend-difference transition-transform`}
     />
   );
 }
