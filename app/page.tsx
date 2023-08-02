@@ -22,7 +22,7 @@ export default function Home() {
         </nav>
         <hr className='bg-black w-full h-[0.15rem]' />
         <div className='w-full h-[calc(100%-3rem)]'>
-          <div name="Background" className='h-[90%] w-[90%] left-[5%] absolute z-0'>
+          <div className='h-[90%] w-[90%] left-[5%] absolute z-0'>
             <DualBlobSvgAnimation bigScale={1.4} smallScale={1.1} bigColor='#FFDFC2' smallColor='#FFC2C2' />
           </div>
           <div className='w-full h-full flex flex-col justify-center items-center gap-12 z-[1] relative'>
