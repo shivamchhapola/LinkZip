@@ -16,6 +16,9 @@
   "javascript.suggest.autoImports": true,
   "javascript.preferences.importModuleSpecifier": "non-relative",
   "cSpell.words": [
-    "georgedoescode"
+    "Footersection",
+    "georgedoescode",
+    "Headsection",
+    "toolset"
   ],
 }

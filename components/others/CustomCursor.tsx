@@ -43,7 +43,6 @@ export default function CustomCursor({
     bigElements.forEach((e) => {
       e.addEventListener('mouseenter', mouseEnterHandler);
       e.addEventListener('mouseleave', mouseLeaveHandler);
-      e.hasAttribute("style") ?? e.setAttribute("style", (e.getAttribute("style") + "cursor: none"));
     });
 
     //mouse enter/leave window event
@@ -65,7 +64,7 @@ export default function CustomCursor({
   useEffect(() => {
     if (cursor.current) {
       big
-        ? (cursor.current.style.transform = 'scale(3)')
+        ? (cursor.current.style.transform = 'scale(2)')
         : (cursor.current.style.transform = 'scale(1)');
     }
   }, [big]);
