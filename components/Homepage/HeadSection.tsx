@@ -17,8 +17,8 @@ export default function HeadSection() {
 
       {/*Menu for Desktop*/}
       <div className='hidden gap-8 sm:flex'>
-        <Link href="/" className='cursor-go-big hover:underline font-semibold'>
-          Home
+        <Link href="#about" className='cursor-go-big hover:underline font-semibold'>
+          About
         </Link>
         <Link href="/" className='cursor-go-big hover:underline font-semibold'>
           Dashboard
@@ -96,7 +96,7 @@ export default function HeadSection() {
           <hr className='bg-black w-full h-[0.15rem]' />
         </div>
         <Link href="/" className='cursor-go-big hover:underline font-semibold'>
-          Home
+          About
         </Link>
         <Link href="/" className='cursor-go-big hover:underline font-semibold'>
           Dashboard

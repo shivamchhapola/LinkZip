@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.cursor-go-big {}
+.cursor-go-big {
+  cursor: none;
+}
 
 body {
   scrollbar-width: none;

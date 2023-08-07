@@ -64,7 +64,7 @@ export default function CustomCursor({
   useEffect(() => {
     if (cursor.current) {
       big
-        ? (cursor.current.style.transform = 'scale(2)')
+        ? (cursor.current.style.transform = 'scale(2.5)')
         : (cursor.current.style.transform = 'scale(1)');
     }
   }, [big]);

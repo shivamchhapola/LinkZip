@@ -7,7 +7,7 @@ import CustomCursor from '@/components/others/CustomCursor';
 export default function Home() {
 
   return (
-    <main className="flex max-w-screen flex-col bg-slate-200">
+    <main className="flex max-w-screen flex-col bg-slate-200 cursor-none scroll-smooth">
       <HeadSection />
       <hr className='bg-black w-full h-[0.15rem]' />
       <ContentSection />
