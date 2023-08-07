@@ -12,8 +12,8 @@ export default function ContentSection() {
   return (
     <section id="about" className='w-full flex flex-col justify-between p-8'>
       <div className='w-full sm:h-1/2 flex flex-col'>
-        <div className='w-full sm:h-[calc(100%-0.15rem)] p-4 flex flex-col sm:flex-row text-center sm:text-left items-center'>
-          <div className='w-full sm:w-2/5 h-2/5 sm:h-full flex justify-center items-center select-none'>
+        <div className='w-full sm:h-[calc(100%-0.15rem)] p-4 flex flex-col sm:flex-row text-center sm:text-left items-center justify-center'>
+          <div className='w-full sm:w-2/5 xl:w-1/5 h-2/5 sm:h-full flex justify-center items-center select-none'>
             <svg ref={sec1svg} viewBox='0 0 260 180'>
               <g id='top-input' className={`${sec1svginview ? "translate-x-[0] opacity-100 transition-all duration-700 delay-300" : "translate-x-[-10rem] opacity-0"} ease-in-out`}>
                 <rect x="20" y="1" width="220" height="40" rx="20" fill="#D9D9D9" stroke="black" strokeWidth="2" />
@@ -40,8 +40,8 @@ export default function ContentSection() {
       </div>
 
 
-      <div className='w-full sm:h-full p-4 flex flex-col sm:flex-row-reverse text-center sm:text-left items-center'>
-        <div className='w-full sm:w-2/5 h-2/5 sm:h-full flex justify-center items-center select-none'>
+      <div className='w-full sm:h-full p-4 flex flex-col sm:flex-row-reverse text-center sm:text-left items-center justify-center'>
+        <div className='w-full sm:w-2/5 xl:w-1/5 h-2/5 sm:h-full flex justify-center items-center select-none'>
           <svg viewBox='0 0 260 260'>
             <g id="axis" className={`${sec2svginview ? "translate-x-[0] opacity-100 transition-all duration-1000 delay-600" : "translate-x-[-10rem] opacity-0"} ease-in-out`}>
               <line y1="230" x2="260" y2="230" stroke="black" strokeWidth="2" />
