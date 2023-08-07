@@ -4,7 +4,7 @@ import { useRef } from "react"
 
 export default function ContentSection() {
   const sec1svg = useRef<SVGSVGElement>(null);
-  const sec2svg = useRef<HTMLElement>(null);
+  const sec2svg = useRef<SVGSVGElement>(null);
 
   const sec1svginview = useIsInViewport(sec1svg);
   const sec2svginview = useIsInViewport(sec2svg);
@@ -42,7 +42,7 @@ export default function ContentSection() {
 
       <div className='w-full sm:h-full p-4 flex flex-col sm:flex-row-reverse text-center sm:text-left items-center justify-center'>
         <div className='w-full sm:w-2/5 xl:w-1/5 h-2/5 sm:h-full flex justify-center items-center select-none'>
-          <svg viewBox='0 0 260 260'>
+          <svg ref={sec2svg} viewBox='0 0 260 260'>
             <g id="axis" className={`${sec2svginview ? "translate-x-[0] opacity-100 transition-all duration-1000 delay-600" : "translate-x-[-10rem] opacity-0"} ease-in-out`}>
               <line y1="230" x2="260" y2="230" stroke="black" strokeWidth="2" />
               <path transform="translate(22, 235)"
@@ -102,7 +102,7 @@ export default function ContentSection() {
             Powerful Analytics
           </div>
           <div className='w-full sm:px-12'>
-            Unlock valuable insights with our robust analytics toolset. Dive deep into link performance, monitor click rates, and track user engagement effortlessly. Our comprehensive analytics empower informed decisions, enhance strategy refinement, and amplify your online <span ref={sec2svg}>impact</span>.
+            Unlock valuable insights with our robust analytics toolset. Dive deep into link performance, monitor click rates, and track user engagement effortlessly. Our comprehensive analytics empower informed decisions, enhance strategy refinement, and amplify your online.
           </div>
         </div>
       </div>
