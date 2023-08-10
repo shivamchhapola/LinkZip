@@ -10,8 +10,8 @@ export default function ContentSection() {
   const sec2svginview = useIsInViewport(sec2svg);
 
   return (
-    <section id="about" className='w-full flex flex-col justify-between p-8'>
-      <div className='w-full sm:h-1/2 flex flex-col'>
+    <section id="about" className='w-full flex flex-col justify-between items-center p-8'>
+      <div className='w-full max-w-[90rem] sm:h-1/2 flex flex-col'>
         <div className='w-full sm:h-[calc(100%-0.15rem)] p-4 flex flex-col sm:flex-row text-center sm:text-left items-center justify-center'>
           <div className='w-full sm:w-2/5 xl:w-1/5 h-2/5 sm:h-full flex justify-center items-center select-none'>
             <svg ref={sec1svg} viewBox='0 0 260 180'>
@@ -40,7 +40,7 @@ export default function ContentSection() {
       </div>
 
 
-      <div className='w-full sm:h-full p-4 flex flex-col sm:flex-row-reverse text-center sm:text-left items-center justify-center'>
+      <div className='w-full max-w-[90rem] sm:h-full p-4 flex flex-col sm:flex-row-reverse text-center sm:text-left items-center justify-center'>
         <div className='w-full sm:w-2/5 xl:w-1/5 h-2/5 sm:h-full flex justify-center items-center select-none'>
           <svg ref={sec2svg} viewBox='0 0 260 260'>
             <g id="axis" className={`${sec2svginview ? "translate-x-[0] opacity-100 transition-all duration-1000 delay-600" : "translate-x-[-10rem] opacity-0"} ease-in-out`}>

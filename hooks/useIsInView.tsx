@@ -1,21 +1,16 @@
-import { useEffect, useState, useMemo, RefObject } from 'react';
+import { useEffect, useState, RefObject, useRef } from 'react';
 
 export default function useIsInViewport(ref: RefObject<HTMLElement> | RefObject<SVGSVGElement>) {
   const [isIntersecting, setIsIntersecting] = useState(false);
-
-  const observer = useMemo(
-    () =>
-      new IntersectionObserver(([entry]) =>
-        setIsIntersecting(entry.isIntersecting),
-      ),
-    [],
-  );
+  const observer = useRef<IntersectionObserver>();
 
   useEffect(() => {
-    ref.current && observer.observe(ref.current);
+    observer.current = new IntersectionObserver(([entry]) => setIsIntersecting(entry.isIntersecting));
+
+    ref.current && observer.current.observe(ref.current);
 
     return () => {
-      observer.disconnect();
+      observer.current && observer.current.disconnect();
     };
   }, [ref, observer]);
 
