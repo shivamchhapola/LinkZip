@@ -2,11 +2,23 @@
 import DualBlobSvgAnimation from '@/components/SVG animations/DualBlobSvgAnimation';
 import { SiGithub } from 'react-icons/si';
 import { MdMenu } from 'react-icons/md';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import Link from 'next/link';
 
 export default function HeadSection() {
+  const linkRef = useRef<HTMLInputElement>(null);
   const [sideBarOpen, setSideBarOpen] = useState(false);
+
+  const onShortLink = async () => {
+    if (linkRef.current) {
+      await fetch(`https://api.shrtco.de/v2/shorten?url=${linkRef.current.value}`).then(
+        async (res) => {
+          if (linkRef.current)
+            linkRef.current.value = (await res.json()).result.full_short_link;
+        });
+    }
+  }
+
   return (
     <header className='w-full h-screen flex flex-col justify-center items-center'>
       {/*Navigation bar*/}
@@ -65,8 +77,8 @@ export default function HeadSection() {
 
           {/*Link Shortener*/}
           <div className='h-10 rounded-full max-w-[30rem] w-[80%] flex outline mt-8'>
-            <input type='text' placeholder='Paste your link here....' className='w-[85%] h-full pl-2 rounded-s-full cursor-go-big' />
-            <button className='w-[15%] h-full text-xl font-semibold bg-black text-white rounded-e-full cursor-go-big hover:underline'>
+            <input type='text' ref={linkRef} placeholder='Paste your link here....' className='w-[85%] h-full pl-2 rounded-s-full cursor-go-big' />
+            <button onClick={onShortLink} className='w-[15%] h-full text-xl font-semibold bg-black text-white rounded-e-full cursor-go-big hover:underline'>
               Zip
             </button>
           </div>

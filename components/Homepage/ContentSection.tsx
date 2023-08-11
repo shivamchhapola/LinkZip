@@ -17,12 +17,12 @@ export default function ContentSection() {
             <svg ref={sec1svg} viewBox='0 0 260 180'>
               <g id='top-input' className={`${sec1svginview ? "translate-x-[0] opacity-100 transition-all duration-700 delay-300" : "translate-x-[-10rem] opacity-0"} ease-in-out`}>
                 <rect x="20" y="1" width="220" height="40" rx="20" fill="#D9D9D9" stroke="black" strokeWidth="2" />
-                <text x="30" y="26" fill="black" className='text-sm'>www.example.com/long-url...</text>
+                <text x="30" y="26" fill="black" className='text-sm'>example.com/very-long-url...</text>
               </g>
               <path className={`${sec1svginview ? "translate-y-[3rem] opacity-100 transition-all duration-500 delay-[1000ms]" : "translate-y-[1.5rem] opacity-0"} translate-x-[7rem] ease-in-out`} d="M25 0H15C12.2386 0 10 2.23858 10 5V53H4.68327C2.59501 53 1.55088 53 1.00045 53.4458C0.561756 53.8011 0.293644 54.3252 0.262271 54.8888C0.222906 55.5961 0.833938 56.4427 2.056 58.1361L17.3727 79.3596C18.2786 80.6147 18.7315 81.2423 19.2967 81.4547C19.7501 81.625 20.2499 81.625 20.7033 81.4547C21.2685 81.2423 21.7214 80.6147 22.6273 79.3596L37.944 58.1361C39.1661 56.4427 39.7771 55.5961 39.7377 54.8888C39.7064 54.3252 39.4382 53.8011 38.9995 53.4458C38.4491 53 37.405 53 35.3167 53H30.5L30 5C30 2.23858 27.7614 0 25 0Z" fill="black" />
               <g id="bottom-input" className={`${sec1svginview ? "translate-x-[0] opacity-100 transition-all duration-700 delay-[1500ms]" : "translate-x-[10rem] opacity-0"} ease-in-out`}>
                 <rect x="20" y="139" width="220" height="40" rx="20" fill="#D9D9D9" stroke="black" strokeWidth="2" />
-                <text x="30" y="164" fill="black" className='text-sm'>www.sho.rt/r4Nd0m</text>
+                <text x="30" y="164" fill="black" className='text-sm'>shrtco.de/r4Nd0m</text>
               </g>
             </svg>
           </div>
