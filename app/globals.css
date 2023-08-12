@@ -6,6 +6,10 @@
   cursor: none;
 }
 
+input {
+  cursor: none;
+}
+
 body {
   scrollbar-width: none;
   /* Firefox */

@@ -1,4 +1,3 @@
-"use client"
 import DualBlobSvgAnimation from '@/components/SVG animations/DualBlobSvgAnimation';
 import { SiGithub } from 'react-icons/si';
 import { MdMenu } from 'react-icons/md';
