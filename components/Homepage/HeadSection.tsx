@@ -32,19 +32,19 @@ export default function HeadSection() {
           <Link href="#about" className='cursor-go-big hover:underline font-semibold'>
             About
           </Link>
-          <Link href="/" className='cursor-go-big hover:underline font-semibold'>
+          <Link href="/dashboard" className='cursor-go-big hover:underline font-semibold'>
             Dashboard
           </Link>
           <Link href="#contact" className='cursor-go-big hover:underline font-semibold'>
             Contact
           </Link>
-          <Link href="/" className='cursor-go-big hover:underline font-semibold'>
+          <Link href="/login" className='cursor-go-big hover:underline font-semibold'>
             Login
           </Link>
-          <Link href="/" className='cursor-go-big hover:underline font-semibold'>
+          <Link href="/signup" className='cursor-go-big hover:underline font-semibold'>
             Sign up
           </Link>
-          <Link href="/" className='cursor-go-big hover:underline font-semibold'>
+          <Link href="https://github.com/shivamchhapola/LinkZip" className='cursor-go-big hover:underline font-semibold'>
             <SiGithub size="1.75rem" />
           </Link>
         </div>
@@ -107,22 +107,22 @@ export default function HeadSection() {
             </div>
             <hr className='bg-black w-full h-[0.15rem]' />
           </div>
-          <Link href="/" className='cursor-go-big hover:underline font-semibold'>
+          <Link href="#about" className='cursor-go-big hover:underline font-semibold'>
             About
           </Link>
-          <Link href="/" className='cursor-go-big hover:underline font-semibold'>
+          <Link href="/dashboard" className='cursor-go-big hover:underline font-semibold'>
             Dashboard
           </Link>
-          <Link href="/" className='cursor-go-big hover:underline font-semibold'>
+          <Link href="#contact" className='cursor-go-big hover:underline font-semibold'>
             Contact
           </Link>
-          <Link href="/" className='cursor-go-big hover:underline font-semibold'>
+          <Link href="/login" className='cursor-go-big hover:underline font-semibold'>
             Login
           </Link>
-          <Link href="/" className='cursor-go-big hover:underline font-semibold'>
+          <Link href="/signup" className='cursor-go-big hover:underline font-semibold'>
             Sign up
           </Link>
-          <Link href="/" className='cursor-go-big hover:underline font-semibold absolute bottom-4 flex items-center gap-2 text-xs underline'>
+          <Link href="https://github.com/shivamchhapola/LinkZip" className='cursor-go-big hover:underline font-semibold absolute bottom-4 flex items-center gap-2 text-xs underline'>
             <SiGithub size="0.75rem" /> Repo
           </Link>
         </div>

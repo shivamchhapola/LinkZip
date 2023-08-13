@@ -19,7 +19,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} cursor-none`}>
         {children}
-        <CustomCursor color="#fff" size={28} />
       </body>
     </html>
   );

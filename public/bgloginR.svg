@@ -1,7 +1,7 @@
 <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
   <g transform="translate(500, 0)">
     <path fill="#d4daf0">
-      <animate attributeName="d" dur="40s" repeatCount="indefinite"
+      <animate attributeName="d" dur="25s" repeatCount="indefinite"
         values="
         M0 432.7C-63.6 434 -127.2 435.4 -165.6 399.7C-204 364.1 -217.3 291.4 -246.1 246.1C-274.9 200.7 -319.2 182.6 -352.9 146.2C-386.6 109.7 -409.6 54.9 -432.7 0L0 0Z;
 
@@ -14,7 +14,7 @@
         M0 432.7C-63.6 434 -127.2 435.4 -165.6 399.7C-204 364.1 -217.3 291.4 -246.1 246.1C-274.9 200.7 -319.2 182.6 -352.9 146.2C-386.6 109.7 -409.6 54.9 -432.7 0L0 0Z" />
     </path>
     <path fill="#ffade7">
-      <animate attributeName="d" dur="40s" repeatCount="indefinite"
+      <animate attributeName="d" dur="25s" repeatCount="indefinite"
         values="
           M0 324.5C-47.7 325.5 -95.4 326.5 -124.2 299.8C-153 273.1 -162.9 218.6 -184.6 184.6C-206.2 150.5 -239.4 137 -264.7 109.6C-290 82.3 -307.2 41.1 -324.5 0L0 0Z;
 
@@ -27,7 +27,7 @@
           M0 324.5C-47.7 325.5 -95.4 326.5 -124.2 299.8C-153 273.1 -162.9 218.6 -184.6 184.6C-206.2 150.5 -239.4 137 -264.7 109.6C-290 82.3 -307.2 41.1 -324.5 0L0 0Z" />
     </path>
     <path fill="#ff766e">
-      <animate attributeName="d" dur="40s" repeatCount="indefinite"
+      <animate attributeName="d" dur="25s" repeatCount="indefinite"
         values="
         M0 216.3C-31.8 217 -63.6 217.7 -82.8 199.9C-102 182 -108.6 145.7 -123 123C-137.4 100.4 -159.6 91.3 -176.5 73.1C-193.3 54.9 -204.8 27.4 -216.3 0L0 0Z;
 

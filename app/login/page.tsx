@@ -1,22 +1,20 @@
 "use client"
-import { Metadata } from "next";
+import CustomCursor from "@/components/others/CustomCursor";
 import Image from "next/image";
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { PiEye, PiEyeClosed } from "react-icons/pi";
 
 type Props = {}
-
-
-export const metadata: Metadata = {
-  title: 'LinkZip Login',
-  description: 'Login page for LinkZip',
-};
 
 const LoginPage = (props: Props) => {
   const userRef = useRef<HTMLInputElement>(null);
   const passRef = useRef<HTMLInputElement>(null);
   const [showPass, setShowPass] = useState(false);
+
+  useEffect(() => {
+    document.title = "LinkZip - Login";
+  }, []);
 
   return (
     <main className="w-screen h-screen flex justify-center items-center bg-slate-200">
@@ -48,6 +46,8 @@ const LoginPage = (props: Props) => {
         <Image src="/bgloginR.svg" alt="Background Right" height={500} width={500} className="absolute right-0 top-0" />
         <Image src="/bgloginL.svg" alt="Background Left" height={500} width={500} className="absolute bottom-0 left-0" />
       </div>
+
+      <CustomCursor color="#fff" size={28} />
     </main>
   )
 }

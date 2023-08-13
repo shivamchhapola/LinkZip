@@ -3,6 +3,7 @@ import ContactSection from '@/components/Homepage/ContactSection';
 import ContentSection from '@/components/Homepage/ContentSection';
 import FooterSection from '@/components/Homepage/FooterSection';
 import HeadSection from '@/components/Homepage/HeadSection';
+import CustomCursor from '@/components/others/CustomCursor';
 
 export default function Home() {
 
@@ -14,6 +15,8 @@ export default function Home() {
       <hr className='bg-black w-full h-[0.15rem]' />
       <ContactSection />
       <FooterSection />
+
+      <CustomCursor color="#fff" size={28} />
     </main>
   );
 }
