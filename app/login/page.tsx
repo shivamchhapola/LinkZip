@@ -25,7 +25,7 @@ const LoginPage = (props: Props) => {
       </div>
 
       <div className="w-4/5 max-w-sm flex flex-col p-10 items-center gap-4 drop-shadow-md shadow-md bg-slate-100 z-10 rounded-lg">
-        <span className="font-bold text-4xl mb-8 cursor-go-big">Welcome Back 👋</span>
+        <span className="font-bold text-4xl mb-8 cursor-go-big">Welcome Back👋</span>
         <input type='text' ref={userRef} placeholder='Email' className='w-full h-10 pl-2 rounded-md outline outline-1 outline-slate-300' />
         <div className="w-full h-10 relative mb-6">
           <input type={showPass ? "text" : "password"} ref={passRef} placeholder='Password' className='w-full h-full pl-2 rounded-md outline outline-1 outline-slate-300' />
